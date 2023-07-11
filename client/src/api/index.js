@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const urll = 'https://hinhblog-server.onrender.com/posts';
+const urll = 'http://localhost:5000/posts';
 export const fetchPosts = () =>  axios.get(urll);
 
 export const createPost = (newPost) => axios.post(urll, newPost);
